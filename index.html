@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="header">
+        <h5>Select the size</h5>
+        <button id="popup" class="btn nes-btn is-primary">Select</button>
+    </div>
+    <p id="message"></p>
+    <p id="draw"></p>
+    <div class="board nes-container"></div>
+    <div class="footer">
+        <button class="nes-btn is-warning" onclick="setColor('black')">Black</button>
+        <button class="nes-btn is-success" onclick="setColor('random')">Random</button>
+        <button class="nes-btn is-error" onclick="resetBoard()">Reset</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
